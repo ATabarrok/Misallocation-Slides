@@ -1,0 +1,115 @@
+% Beamer Preamble — Price Controls Cause Chaos
+% Clean academic style
+
+\usetheme{default}
+\usecolortheme{default}
+
+% ── Fonts ──
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+
+% ── Packages ──
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,calc,patterns,positioning,decorations.pathreplacing}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{appendixnumberbeamer}
+
+% ── Color Palette ──
+\definecolor{GMUgreen}{RGB}{0,105,60}
+\definecolor{GMUgold}{RGB}{185,154,52}
+\definecolor{DarkSlate}{RGB}{52,73,94}
+\definecolor{AlertRed}{RGB}{192,57,43}
+\definecolor{SoftBlue}{RGB}{52,152,219}
+\definecolor{LightGray}{RGB}{236,240,241}
+\definecolor{MedGray}{RGB}{149,165,166}
+\definecolor{DarkText}{RGB}{44,62,80}
+
+% ── Beamer Structure Colors ──
+\setbeamercolor{structure}{fg=DarkSlate}
+\setbeamercolor{frametitle}{fg=DarkSlate,bg=white}
+\setbeamercolor{title}{fg=DarkSlate}
+\setbeamercolor{subtitle}{fg=MedGray}
+\setbeamercolor{author}{fg=DarkText}
+\setbeamercolor{date}{fg=MedGray}
+\setbeamercolor{normal text}{fg=DarkText}
+\setbeamercolor{alerted text}{fg=AlertRed}
+\setbeamercolor{example text}{fg=GMUgreen}
+\setbeamercolor{block title}{fg=white,bg=DarkSlate}
+\setbeamercolor{block body}{bg=LightGray}
+\setbeamercolor{block title alerted}{fg=white,bg=AlertRed}
+\setbeamercolor{block body alerted}{bg=AlertRed!10}
+\setbeamercolor{block title example}{fg=white,bg=GMUgreen}
+\setbeamercolor{block body example}{bg=GMUgreen!8}
+\setbeamercolor{itemize item}{fg=DarkSlate}
+\setbeamercolor{itemize subitem}{fg=MedGray}
+\setbeamercolor{footnote}{fg=MedGray}
+
+% ── Beamer Fonts ──
+\setbeamerfont{title}{size=\Large,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\small,series=\normalfont}
+\setbeamerfont{author}{size=\normalsize}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{footnote}{size=\tiny}
+
+% ── Beamer Templates ──
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{%
+  \hfill\insertframenumber\,/\,\inserttotalframenumber\hspace{2mm}\vspace{2mm}%
+}
+\setbeamertemplate{frametitle}{%
+  \vspace{4pt}%
+  \insertframetitle%
+  \ifx\insertframesubtitle\empty\else%
+    \\[2pt]{\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}%
+  \fi%
+  \vspace{-2pt}%
+  {\color{GMUgold}\hrule height 0.8pt}%
+  \vspace{4pt}%
+}
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[default]
+
+% ── Custom Environments ──
+\newenvironment{keybox}[1][Key Insight]{%
+  \begin{beamercolorbox}[rounded=true,sep=6pt]{block title alerted}%
+    \textbf{#1}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[rounded=true,sep=8pt]{block body alerted}%
+}{%
+  \end{beamercolorbox}%
+}
+
+\newenvironment{resultbox}[1][Result]{%
+  \begin{beamercolorbox}[rounded=true,sep=6pt]{block title}%
+    \textbf{#1}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[rounded=true,sep=8pt]{block body}%
+}{%
+  \end{beamercolorbox}%
+}
+
+\newenvironment{quoteslide}[1][]{%
+  \begin{center}\large\itshape``%
+}{%
+  ''\end{center}%
+}
+
+% ── Shortcuts ──
+\newcommand{\pbar}{\bar{p}}
+\newcommand{\Qbar}{\bar{Q}}
+\newcommand{\qbar}{\bar{q}}
+\newcommand{\LMis}{L^{\text{Mis}}}
+\newcommand{\LHarb}{L^{\text{Harb}}}
+\newcommand{\emphcolor}[1]{{\color{AlertRed}\textbf{#1}}}
+\newcommand{\goodcolor}[1]{{\color{GMUgreen}\textbf{#1}}}
+\newcommand{\cmark}{\color{GMUgreen}\checkmark}
+\newcommand{\xmark}{\color{AlertRed}\texttimes}
