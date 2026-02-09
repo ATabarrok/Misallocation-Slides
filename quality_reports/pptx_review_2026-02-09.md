@@ -9,9 +9,11 @@
 
 ## Overall Assessment
 
-This is a strong research talk with a compelling narrative arc: motivation via historical puzzle → theory (corner allocations, chaos theorem) → empirics → broader implications. The core ideas are powerful and clearly articulated. However, the deck has significant structural gaps (6+ slides with titles only and no content), several text errors, font inconsistencies, and places where pedagogical flow could be sharpened.
+This is a strong research talk with a compelling narrative arc: motivation via historical puzzle → theory (corner allocations, chaos theorem) → empirics → broader implications. The core ideas are powerful and clearly articulated. The deck has some text errors, font inconsistencies, and places where pedagogical flow could be sharpened.
 
-**Estimated Score: 74/100** — solid foundation, needs polish before presenting.
+**Note:** Slides 9, 15, 17, 18, 19, and 25 contain substantial math-heavy content stored in PowerPoint's Office 2010+ equation format (`a14` namespace). This content is fully visible in PowerPoint but invisible to Python extraction tools.
+
+**Estimated Score: 80/100** — strong deck, needs a proofreading pass and some visual polish.
 
 ---
 
@@ -43,9 +45,18 @@ This is a strong research talk with a compelling narrative arc: motivation via h
 
 ## 2. STRUCTURAL NOTES
 
-### Title-Only Section Headers
+### Equation-Heavy Slides (a14 format)
 
-Slides 9, 15, 17, 18, 19, and 25 are title-only slides. These serve as **section dividers** where the presenter delivers content verbally or at the board — an intentional design choice, not a gap.
+Slides 9, 15, 17, 18, 19, and 25 contain rich content with mathematical equations stored in PowerPoint's `a14` (Office 2010+) format. Summary of their actual content:
+
+| Slide | Title | Content |
+|-------|-------|---------|
+| **9** | Setup: Two Segments/Submarkets | Two-market setup with D₁(p), D₂(p), price ceiling p̄, feasibility constraints |
+| **15** | From Two to Many | n submarkets, flexible "submarket" definition (geographic/temporal/product/production), feasible set F as convex polytope with vertex characterization |
+| **17** | Theorem 1 (Worst Case) | Worst-case allocation at corner of F, intuition via concavity, cutoff λ characterization |
+| **18** | Markets are Smooth | Free-market surplus maximization, Berge's Maximum Theorem → continuity in θ |
+| **19** | Under Price Controls: Cost Minimization | Cost minimization LP under ceiling, markets filled by increasing cost, discontinuity result |
+| **25** | The Identification Problem | Local identification problem, CES example, robust bounds framing |
 
 ### Missing Title
 
@@ -131,24 +142,9 @@ Slides 6 and 7 both have:
 
 **Recommendation:** These appear to be progressive-reveal slides (showing different areas on the S&D diagram). If so, they work as an animation pair — but the body text should change between them to guide the audience through what's being revealed. Currently the text is identical, which wastes the second slide.
 
-### Missing "Robust Bounds" Section
+### Robust Bounds Coverage
 
-The paper has **four contributions** (listed on slides 4 and 30):
-1. Corner allocations
-2. Chaos theorem
-3. **Robust bounds on welfare**
-4. Empirical application
-
-Contribution 3 (robust bounds) has no slides with body text in the PPTX (though it may be covered verbally). The Beamer version has an entire Part V (8 slides) on this topic. Worth considering whether adding some visual support for this section would strengthen the talk.
-
-### Abrupt Transition: Theory → History
-
-After the chaos theorem (slides 20–22), the deck jumps straight to the 1971–74 oil crisis (slide 23) without a transition explaining:
-- How the theory maps to the empirical setting
-- What the identification strategy is (slide 25 has this title but no content)
-- What "robust bounds" means in the empirical context
-
-**Recommendation:** Add a brief bridge slide: "From Theory to Evidence: What can we measure?" before diving into the historical narrative.
+Slide 25 ("The Identification Problem") introduces the robust bounds idea — the local identification problem, the CES example, and the framing question. This is lighter coverage than the Beamer version (which devotes ~8 slides including the 1D optimization characterization and empirical bounds). Consider whether adding 1–2 more slides on the actual bounds methodology and results would strengthen the talk for technical audiences.
 
 ### Slide 29 (Political Economy) Feels Disconnected
 
@@ -215,7 +211,6 @@ The quote "Phases 3 and 3A have created price anomalies..." is attributed to "19
 2. **Fix "prices/" typo** (Slide 23)
 3. **Fix "prizes" → "prices"** in Slide 14 speaker notes
 4. **Convert WMF images to PNG** for cross-platform compatibility
-5. **Consider adding Robust Bounds content** — contribution 3 has no dedicated slides with body text
 
 ### Should Fix (Quality Polish)
 
@@ -237,12 +232,10 @@ The quote "Phases 3 and 3A have created price anomalies..." is attributed to "19
 
 ## Comparison with Beamer Version
 
-The Beamer deck (`Price_Controls_Chaos.tex`, 871 lines) is significantly more complete:
-- Includes the **Robust Bounds** section (Part V, ~8 slides)
-- Has a **Toy Example** section (Part VI)
-- Includes all theorem statements (Theorem 1 is fully stated)
-- Has consistent formatting and typography
-- Includes proper LaTeX math throughout
+The Beamer deck (`Price_Controls_Chaos.tex`, 871 lines) covers similar ground with some differences:
+- Has a more detailed **Robust Bounds** section (Part V, ~8 slides vs. 1 slide in PPTX)
+- Has a **Toy Example** section (Part VI) not in the PPTX
+- Has consistent LaTeX typography throughout
 - Contains more speaker notes
 
-**Recommendation:** Use the Beamer deck as the authoritative source and backfill the PPTX from it, or consider presenting from the Beamer PDF instead.
+The PPTX has strengths the Beamer lacks: richer historical examples (baby chicks, supply-chain breaking, political economy), more vivid quotes, and the "Sorry No Gas" photo. The two decks complement each other well for different audiences.

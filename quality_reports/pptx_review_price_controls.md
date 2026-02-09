@@ -38,9 +38,9 @@ The deck presents a compelling argument about the misallocation costs of price c
 
 ## II. Structural Issues
 
-### Title-Only Section Headers
+### Equation-Heavy Slides (a14 format)
 
-Slides 9, 15, 17, 18, 19, and 25 are title-only slides that serve as **section dividers** where the presenter delivers content verbally or at the board — an intentional design choice.
+Slides 9, 15, 17, 18, 19, and 25 contain rich mathematical content stored in PowerPoint's Office 2010+ equation format. Their content includes: two-market setup (Slide 9), general model with feasible set definition (Slide 15), Theorem 1 with cutoff characterization (Slide 17), Berge's Maximum Theorem / continuity (Slide 18), cost minimization LP and discontinuity (Slide 19), and the identification problem with robust bounds framing (Slide 25).
 
 ### Missing Slide Title
 
@@ -48,14 +48,9 @@ Slides 9, 15, 17, 18, 19, and 25 are title-only slides that serve as **section d
 |-------|-------|
 | **16** | No title at all. Body text discusses free markets vs. price controls corner solutions. Needs a title (e.g., "Free Markets vs. Price Controls: Interior vs. Corner"). |
 
-### Missing Content: Robust Bounds (Contribution #3)
+### Robust Bounds Coverage
 
-Slides 4 and 30 both promise **four contributions**, including "3. Robust Bounds on Welfare" — described as "Sharp welfare bounds without assuming a demand functional form. Computation reduces to a 1D optimization." However, **no slide in the deck actually presents the robust bounds methodology, equations, or results.** The empirical application section (slides 23–25) also lacks the welfare bound estimates that the paper produces.
-
-**Recommendation:** Add 2–3 slides covering:
-- The identification problem and partial identification approach
-- The 1D optimization characterization (key equation from the paper)
-- Empirical welfare bounds for the 1973–74 gasoline crisis (the paper's headline finding that misallocation losses exceed the Harberger triangle)
+Slide 25 introduces the robust bounds idea (identification problem, CES example, framing). Coverage is lighter than the Beamer version (~8 slides). Consider whether 1–2 additional slides on the bounds methodology and empirical results would help for technical audiences.
 
 ---
 
