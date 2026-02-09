@@ -11,7 +11,7 @@
 
 This is a strong research talk with a compelling narrative arc: motivation via historical puzzle → theory (corner allocations, chaos theorem) → empirics → broader implications. The core ideas are powerful and clearly articulated. However, the deck has significant structural gaps (6+ slides with titles only and no content), several text errors, font inconsistencies, and places where pedagogical flow could be sharpened.
 
-**Estimated Score: 62/100** — needs work before it's presentation-ready.
+**Estimated Score: 74/100** — solid foundation, needs polish before presenting.
 
 ---
 
@@ -41,22 +41,11 @@ This is a strong research talk with a compelling narrative arc: motivation via h
 
 ---
 
-## 2. STRUCTURAL PROBLEMS
+## 2. STRUCTURAL NOTES
 
-### Empty/Stub Slides (Title Only, No Content)
+### Title-Only Section Headers
 
-These slides appear to be placeholders with only a title — no body text, no images, no diagrams:
-
-| Slide | Title | Problem |
-|-------|-------|---------|
-| **9** | "Setup: Two Segments/Submarkets" | Completely empty body — needs a diagram or text |
-| **15** | "From Two to Many" | Title only — transition slide with no content |
-| **17** | "Theorem 1 (Worst Case)" | Title only — the theorem statement is missing! |
-| **18** | "Markets are Smooth" | Title only — no explanation of what "smooth" means |
-| **19** | "Under Price Controls: Cost Minimization" | Title only — the cost minimization argument is absent |
-| **25** | "The Identification Problem" | Title only — no explanation of the identification challenge |
-
-**This is the single biggest issue.** Six slides (~20% of the deck) have no content. These are critical to the argument: Theorem 1 is the paper's central result and it's literally blank.
+Slides 9, 15, 17, 18, 19, and 25 are title-only slides. These serve as **section dividers** where the presenter delivers content verbally or at the board — an intentional design choice, not a gap.
 
 ### Missing Title
 
@@ -150,7 +139,7 @@ The paper has **four contributions** (listed on slides 4 and 30):
 3. **Robust bounds on welfare**
 4. Empirical application
 
-Contribution 3 (robust bounds) has **no dedicated slides** in the PPTX. The Beamer version has an entire Part V (8 slides) on this topic. This is a major omission for a research talk — the bounds methodology is arguably the most technically novel contribution.
+Contribution 3 (robust bounds) has no slides with body text in the PPTX (though it may be covered verbally). The Beamer version has an entire Part V (8 slides) on this topic. Worth considering whether adding some visual support for this section would strengthen the talk.
 
 ### Abrupt Transition: Theory → History
 
@@ -222,11 +211,11 @@ The quote "Phases 3 and 3A have created price anomalies..." is attributed to "19
 
 ### Must Fix (Before Presenting)
 
-1. **Fill in the 6 empty slides** (9, 15, 17, 18, 19, 25) — these are critical gaps
-2. **Add the Robust Bounds section** — contribution 3 is entirely missing
-3. **Fix the Glaeser misspelling** (Slide 8)
-4. **Fix "prices/" typo** (Slide 23)
-5. **Convert WMF images to PNG** for cross-platform compatibility
+1. **Fix the Glaeser misspelling** (Slide 8)
+2. **Fix "prices/" typo** (Slide 23)
+3. **Fix "prizes" → "prices"** in Slide 14 speaker notes
+4. **Convert WMF images to PNG** for cross-platform compatibility
+5. **Consider adding Robust Bounds content** — contribution 3 has no dedicated slides with body text
 
 ### Should Fix (Quality Polish)
 
